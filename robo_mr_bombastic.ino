@@ -6,7 +6,7 @@
 
 // ================ WIFI ================
 const char* AP_SSID = "ROBO3";
-const char* AP_PASS = "robo12345";
+const char* AP_PASS = "DIGITE_SUA_SENHA";
 
 WebServer server(80);
 
