@@ -5,12 +5,22 @@
 #include <esp_arduino_version.h>
 
 // ================ WIFI ================
+// O ESP32 opera como Access Point (AP), criando sua propria
+// rede Wi-Fi para permitir o controle do robo pelo celular.
+
 const char* AP_SSID = "ROBO3";
 const char* AP_PASS = "DIGITE_SUA_SENHA";
 
+// Pino reservado para o ESC do sistema da arma.
+// O acionamento permanece desabilitado nesta versao.
+#define WEAPON_PIN 21
 WebServer server(80);
 
 // ================ PINOS L298N ================
+
+// Pinos utilizados para controlar sentido e velocidade
+// dos motores de tracao esquerdo e direito.
+
 #define MOTOR_L1 26
 #define MOTOR_L2 25
 #define MOTOR_D1 33
