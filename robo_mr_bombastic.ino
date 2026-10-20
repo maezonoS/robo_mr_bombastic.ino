@@ -460,6 +460,7 @@ document.addEventListener('visibilitychange', () => {
 )rawliteral";
 
 // ================ ROTAS HTTP ================
+// Abre a pagina principal de controle.
 
 void paginaInicial() {
   server.send(200, "text/html; charset=utf-8", pagina);
